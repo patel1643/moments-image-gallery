@@ -10,6 +10,7 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { SignUpPageComponent } from './pages/sign-up-page/sign-up-page.component';
 import { SignUpFormComponent } from './components/sign-up-form/sign-up-form.component';
+import { StoreModule } from '@ngrx/store';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { SignUpFormComponent } from './components/sign-up-form/sign-up-form.comp
     BrowserModule,
     AppRoutingModule,
     ReactiveFormsModule,
-    HttpClientModule
+    HttpClientModule,
+    StoreModule.forRoot({}, {})
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1762,6 +1762,13 @@
   dependencies:
     "call-bind" "^1.0.2"
 
+"@ngrx/store@^17.0.1":
+  "integrity" "sha512-BmVzN+fqyz0ZrVEmJ+jrNwePMKcpNL49vb8sbQ3yDDftxgZz2HqRKFMexqlXpz5ixwK5LqTOblHNQOgi9irsTw=="
+  "resolved" "https://registry.npmjs.org/@ngrx/store/-/store-17.0.1.tgz"
+  "version" "17.0.1"
+  dependencies:
+    "tslib" "^2.0.0"
+
 "@ngtools/webpack@17.0.8":
   "integrity" "sha512-wx0XBMrbpDeailK2uIhp/ZVMC3GK3BWwJjUu5SbT4BFrcoi2Zd9/9m0RCBAY54UXLBCqKd+ih7pJ6JSvprZmWw=="
   "resolved" "https://registry.npmjs.org/@ngtools/webpack/-/webpack-17.0.8.tgz"
@@ -3515,6 +3522,7 @@
     "@angular/platform-browser" "^17.0.0"
     "@angular/platform-browser-dynamic" "^17.0.0"
     "@angular/router" "^17.0.0"
+    "@ngrx/store" "^17.0.1"
     "rxjs" "~7.8.0"
     "tslib" "^2.3.0"
     "zone.js" "~0.14.2"
@@ -8630,7 +8638,7 @@
   "resolved" "https://registry.npmjs.org/rx/-/rx-4.1.0.tgz"
   "version" "4.1.0"
 
-"rxjs@^6.5.3 || ^7.4.0", "rxjs@^7.8.1", "rxjs@~7.8.0", "rxjs@7.8.1":
+"rxjs@^6.5.3 || ^7.4.0", "rxjs@^6.5.3 || ^7.5.0", "rxjs@^7.8.1", "rxjs@~7.8.0", "rxjs@7.8.1":
   "integrity" "sha512-AA3TVj+0A2iuIoQkWEK/tqFjBq2j+6PO6Y0zJcvzLAFhEFIO3HL0vls9hWLncZbAAbK0mar7oZ4V079I/qPMxg=="
   "resolved" "https://registry.npmjs.org/rxjs/-/rxjs-7.8.1.tgz"
   "version" "7.8.1"
@@ -9718,7 +9726,7 @@
     "minimist" "^1.2.6"
     "strip-bom" "^3.0.0"
 
-"tslib@^2.1.0", "tslib@^2.3.0", "tslib@2.6.2":
+"tslib@^2.0.0", "tslib@^2.1.0", "tslib@^2.3.0", "tslib@2.6.2":
   "integrity" "sha512-AEYxH93jGFPn/a2iVAwW87VuUIkR1FVUKB77NwMF7nBTDkDrrT/Hpt/IrCJ0QXhW27jTBDcf5ZY7w6RiqTMw2Q=="
   "resolved" "https://registry.npmjs.org/tslib/-/tslib-2.6.2.tgz"
   "version" "2.6.2"
