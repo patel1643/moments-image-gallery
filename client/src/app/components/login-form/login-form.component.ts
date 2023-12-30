@@ -1,4 +1,4 @@
-import { Component, OnInit, SimpleChanges } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { FormControl, FormGroup, Validators } from '@angular/forms';
 import { LoginFormData } from '../../interfaces/AuthTypes';
 import { AuthService } from '../../services/auth.service';
@@ -19,18 +19,12 @@ export class LoginFormComponent implements OnInit {
 
   loginFormSubmit(): void{
     const loginFormData: LoginFormData = this.loginForm.value;
-
     this.authService.login(loginFormData).subscribe(resp => {
       console.log(resp);
-    })
+    });
   }
 
 
-
-
-  // logger(value:any){
-  //   console.log(value)
-  // }
   ngOnInit(): void {
       this.loginForm = new FormGroup({
         email: new FormControl('', [Validators.required, Validators.email]),
