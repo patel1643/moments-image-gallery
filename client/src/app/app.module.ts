@@ -11,6 +11,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { SignUpPageComponent } from './pages/sign-up-page/sign-up-page.component';
 import { SignUpFormComponent } from './components/sign-up-form/sign-up-form.component';
 import { StoreModule } from '@ngrx/store';
+import { NavbarComponent } from './components/navbar/navbar.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { StoreModule } from '@ngrx/store';
     LoginPageComponent,
     LoginFormComponent,
     SignUpPageComponent,
-    SignUpFormComponent
+    SignUpFormComponent,
+    NavbarComponent
   ],
   imports: [
     BrowserModule,
