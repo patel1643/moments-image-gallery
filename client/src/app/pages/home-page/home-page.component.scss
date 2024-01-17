@@ -1,28 +1,13 @@
-.animation-sliding-img-up-1{
-    animation: scroll 10s linear infinite;
-    animation-direction: normal;
+.animation-sliding-img-up{
+    animation: scroll 10s linear infinite ;
 }
 
-.animation-sliding-img-up-2{
-    animation: scroll 10s linear infinite;
-    animation-direction: reverse;
-}
-
-
-.animation-sliding-img-up-1 img {
-  max-width: 100%;
-  height: auto;
-  border: 1px solid #ddd; /* Add border or customize as needed */
-  border-radius: 5px; /* Optional: Add border-radius */
+.animation-sliding-img-down{
+    animation: scroll 8s linear infinite reverse;
 }
 
 
-.animation-sliding-img-up-2 img {
-  max-width: 100%;
-  height: auto;
-  border: 1px solid #ddd; /* Add border or customize as needed */
-  border-radius: 5px; /* Optional: Add border-radius */
-}
+
 
 
 @keyframes scroll {
@@ -32,4 +17,12 @@
   100% {
     transform: translateY(-100%);
   }
+}
+
+.slanted-rows-3d{
+  transform: translate3d(7%, -2%, 0px) scale3d(.9, 0.7, 1) rotateX(-15deg) rotateY(-9deg) rotateZ(30deg);
+}
+
+.image-styles{
+  @apply w-full shadow-md rounded-lg 
 }

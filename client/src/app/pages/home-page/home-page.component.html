@@ -1,25 +1,26 @@
-<div class="w-full px-36 h-[50rem] sm:h-[30rem] lg:h-[35rem] overflow-hidden">
-    <div class="grid grid-cols-3 gap-12 w-[70rem] sm:w-[80rem] lg:w-[50rem] h-[55rem] md:h-[90rem] lg:h-[75rem] overflow-hidden origin-[50%_0%]"
-        style="transform: translate3d(7%, -2%, 0px) scale3d(0.8, 0.7, 1) rotateX(15deg) rotateY(-9deg) rotateZ(32deg);">
-        <div class="grid gap-9 w-full h-[440px] animation-sliding-img-up-1">
-            <img *ngFor="let image of images"
-                class=" w-full object-cover shadow-lg rounded-lg dark:shadow-gray-900/[.75] dark:block" [src]="image"
-                alt="Image Description">
-        </div>
+<div class="p-24 flex flex-row">
+    <div class="basis-1/2 mx-auto sm:basis-1/1 flex items-center">
+        <img class="mx-auto " src="assets/logos/logo1.png" alt="Logo image">
+    </div>
+    <div
+        class="basis-1/2 mx-auto rounded-lg sm:basis-1/1 h-[50rem] sm:h-[30rem] lg:h-[35rem] overflow-hidden max-w-[30rem]">
+        <div
+            class="slanted-rows-3d grid grid-cols-3 gap-5  sm:w-[80rem] lg:w-[50rem] h-[55rem] md:h-[90rem] lg:h-[75rem] overflow-hidden origin-[50%_0%]">
+            <div class="grid gap-3 w-full h-[240px] animation-sliding-img-up">
+                <img *ngFor="let image of images" class="image-styles" [src]="image" alt="Image Description">
+                <img *ngFor="let image of images" class="image-styles" [src]="image" alt="Image Description">
+            </div>
 
-        <div class="grid gap-9 w-full h-[440px] animation-sliding-img-down-1">
-            <img *ngFor="let image of images"
-                class=" w-full object-cover shadow-lg rounded-lg dark:shadow-gray-900/[.75] dark:block" [src]="image"
-                alt="Image Description">
-        </div>
+            <div class="grid gap-3 w-full h-[240px] animation-sliding-img-down">
+                <img *ngFor="let image of images" class="image-styles" [src]="image" alt="Image Description">
+                <img *ngFor="let image of images" class="image-styles" [src]="image" alt="Image Description">
+            </div>
 
-        <div class="grid gap-9 w-full h-[440px] animation-sliding-img-up-1">
-            <img *ngFor="let image of images"
-                class=" w-full object-cover shadow-lg rounded-lg dark:shadow-gray-900/[.75] dark:block" [src]="image"
-                alt="Image Description">
-            <img *ngFor="let image of images"
-                class=" w-full object-cover shadow-lg rounded-lg dark:shadow-gray-900/[.75] dark:block" [src]="image"
-                alt="Image Description">
+            <div class="grid gap-3 w-full h-[240px] animation-sliding-img-up">
+                <img *ngFor="let image of images" class="image-styles" [src]="image" alt="Image Description">
+                <img *ngFor="let image of images" class="image-styles" [src]="image" alt="Image Description">
+            </div>
+
         </div>
     </div>
 </div>
